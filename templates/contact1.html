@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <title>About</title>
+    <style>
+        body{
+
+margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("https://wallpapersmug.com/download/5120x2880/16124f/abstract-blue-patterns-design.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  background-color: white;
+  min-height: 100%;
+}
+
+.contact_us{
+    background-color: white;
+    opacity: 80%;
+    color: white;
+    margin-top: 10px;
+    padding:10px;
+}
+
+label{
+    color:black;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper teal lighen-1">
+          <a href="filter.html" class="brand-logo right">PROFANITY FILTER</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="filter.html">Home</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <div class="container contact_us">
+          <h1 class="center" style="color:black">CONTACT US</h1>
+        <div class="row">
+            <form class="col s12" action="contact" method="GET">
+              <div class="row">
+                <div class="input-field col s6">
+                    <input id="first_name" placeholder="first name" type="text" class="validate">
+                    <label for="last_name">First Name</label>
+                  </div>
+                <div class="input-field col s6">
+                  <input id="last_name" placeholder="last name" type="text" class="validate">
+                  <label for="last_name">Last Name</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s6">
+                    <input id="email" placeholder="first name" type="email" class="validate">
+                    <label for="last_name">Email</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="contact" placeholder="contact number" type="text" class="validate">
+                    <label for="contact">Contact number</label>
+                  </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" placeholder="comments" class="materialize-textarea"></textarea>
+                  <label for="textarea1">Please enter your message</label>
+                </div>
+              </div>
+
+              <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+              </button>
+                    
+
+              
+              
+              
+              
+
+            </form>
+          </div>
+      </div>
+      
+      
+</body>
+</html>

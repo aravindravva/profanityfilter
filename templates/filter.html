@@ -1,0 +1,159 @@
+<html>  
+<head> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
+    <title>upload</title>  
+    <style> 
+       
+        .box
+        {   
+            margin-top: 50%;
+            padding-top: 10px;
+            background-color: cadetblue;
+            opacity: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 70px;
+            width:400px;
+            height:250px;
+
+
+        }
+
+.up1
+{
+    position: relative;           
+}
+
+
+#edit_img{
+height:50px;
+width: 800px;
+top:auto; 
+}
+.centered_top {
+position: absolute;
+top: 50%;
+left: 2%;
+transform: translate(-50%, -50%);
+}
+
+.centered_bottom {
+position: absolute;
+top: 50%;
+left: 50px;
+transform: translate(-50%, -50%);
+}
+
+.down1{
+    right: 0px;
+    position:absolute;
+    bottom:0px;
+}
+
+h1{
+            font-size: 40px;
+            color:white;
+            margin-top:20px;
+            
+        }
+ 
+
+
+        input[type="file"]
+        {
+            margin-top:30px;
+            margin-left:20%;
+        }
+
+        input[type="submit"]
+        {
+            margin-top:30px;
+            margin-left:40%;
+        }
+
+        
+
+       #gif
+       {
+          
+        align-items: center;
+        justify-content: center;
+       }
+
+      #upload_button{
+          margin-top: 15px;
+      }
+
+      
+
+body{
+
+margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("https://wallpapersmug.com/download/5120x2880/16124f/abstract-blue-patterns-design.jpg");
+  background-size: 100%;
+  background-position: bottom;
+  background-color: white;
+  min-height: 100%;
+}
+
+
+        </style>
+        <script>
+            
+            function show_hide()
+            {
+                var a=1;
+                if(a==1)
+                {
+                    
+                    document.getElementById("gif").style.display="flex";
+                    document.getElementById("gif").style.alignItems="center";
+                    document.getElementById("gif").style.justifyContent="center";
+        
+                    return a=0;
+                }
+                else
+                {
+                    document.getElementById("gif").style.display="none";
+                    return a=1;
+                }
+
+            }
+        </script>
+       
+</head>  
+<body>  
+    <nav>
+        <div class="nav-wrapper teal lighen-1">
+          <a href="filter.html" class="brand-logo right" >PROFANITY FILTER</a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+            <li><a href="filter.html">Home</a></li>
+            <li><a href="about1.html">About</a></li>
+            <li><a href="contact1.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      
+    
+    <div class="box center">
+        <form action = "/uploadfiles" method = "post" enctype="multipart/form-data"> 
+            <h1 class="center">Filter your video here</h1>
+            <input type="file" name="file" />  
+            <br>
+            <button id = "upload_button" class="waves-effect waves-light btn center"  onclick= "show_hide()" value="Upload">Upload</button>
+
+        </form>   
+      
+</div>
+<div class="gif" id="gif" style="display: none">
+<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/35771931234507.564a1d2403b3a.gif" alt="this slowpoke moves"  width=250/>     
+</div>
+</body>  
+</html>  
+
